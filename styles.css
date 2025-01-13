@@ -81,7 +81,7 @@ body{
     align-items: center;
     font-size: 1.2em;
     gap: 2em;
-    margin-right: 12vw;
+    margin-right: 10vw;
 }
 
 .links a{
@@ -269,4 +269,29 @@ body{
     text-align: justify;
     padding: 2.5vh 2.5vw;
     box-shadow: 0 0 2em 0.3em rgba(71, 146, 173, 0.6);
+}
+
+.project__container h1{
+    display: flex;
+    justify-content: center;
+    font: bold 3em "Montserrat";
+    margin-top: 10vh;
+    margin-bottom: 8vh;
+}
+
+.project__title{
+    font: bold 1.5em "Montserrat";
+    margin-left: 4vw;
+    margin-bottom: 6vh;
+}
+
+.box1, .box2, .box3{
+    padding: 2.5vh 2.5vw;
+    margin: 8vh 4vw;
+    width: 40vw;
+    background-color: white;
+}
+
+.boxes h4{
+    font: normal 1em "Montserrat";
 }
