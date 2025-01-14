@@ -258,6 +258,7 @@ body{
     margin-bottom: 6vh;
 }
 
+
 .square1, .square2, .square3{
     font-size: 1em;
     display: flex;
@@ -286,12 +287,38 @@ body{
 }
 
 .box1, .box2, .box3{
-    padding: 2.5vh 2.5vw;
+    display: flex;
     margin: 8vh 4vw;
     width: 40vw;
     background-color: white;
+    box-shadow: 0 0 2em 0.3em rgba(71, 146, 173, 0.6);
 }
 
 .boxes h4{
-    font: normal 1em "Montserrat";
+    font: bold 1.2em "Montserrat";
+}
+
+.boxes p{
+    padding-bottom: 0.8em;
+}
+
+.boxleft{
+    margin: 0;
+    width: 18vw;
+    font: lighter 1em "Montserrat";
+    padding-left: 2em;
+}
+
+.boxright{
+    width: 50%;
+    align-items: center;  
+    overflow: hidden;
+}
+
+.boxright img{
+    width: 45vw; 
+    height: auto;
+    padding: 2em;
+    display: flex;
+    align-items: center;
 }
