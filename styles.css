@@ -34,6 +34,7 @@ body{
     list-style: none;
     scroll-behavior: smooth auto;
     display: flex;
+    background-color: rgba(109,205,221,255);
     flex-direction: column;
 }
 
@@ -58,7 +59,7 @@ body{
     font: normal 500 1.3em "Montserrat";
     text-decoration: none;
     cursor: pointer;
-    margin-left: 12vw;
+    margin-left: 13rem;
 }
 
 .tag:hover{
@@ -72,7 +73,7 @@ body{
     max-width: 10vw;
     border-radius: 50%;
     border: 1px solid rgba(109,205,221,255);
-    margin-right: 1vw;
+    margin-right: 1rem;
 }
 
 .links{
@@ -81,7 +82,7 @@ body{
     align-items: center;
     font-size: 1.2em;
     gap: 2em;
-    margin-right: 10vw;
+    margin-right: 13rem;
 }
 
 .links a{
@@ -96,57 +97,70 @@ body{
 
 .header{
     display: flex;
-    height: 80vh;
-    padding: 11vh 11.5vw;
+    height: 60vh;
+    padding: 11rem 11.5rem;
     align-items: center;
     background-color: #ffffff;
-    align-items: center;
+    justify-content: center;
     margin-top: auto;
 }
 
-.hello{
+.headerbox{
     position: relative;
-    top: -3vh;
-    left: 1vw;
-    width: 45vw;
-    max-height: 37vh;
-    overflow-y: auto;
-    display: block;
-    color: black;
-    text-align: justify;
+    margin: 0 auto;
+    width: 100rem;
+    height: 50rem;
+    gap: 5rem;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
 }
 
 .shape1{
     position: relative;
     background-color: rgb(26, 53, 77);
-    height: 45vh;  
-    width: 30vw;
-    left: 1vw;
-    bottom: 9vh;
-    margin-top: 7vh;
+    height: 30em;  
+    width: 30em;
+    left: 0;
+    top: 0;
 }
 
 .shape2{
-    position: relative;
+    position: absolute;
     background-color: rgba(109,205,221,255);
-    height: 45vh;  
-    width: 30vw;
-    top: 2vh;
-    left: -13vw;
-    margin-top: 12vh;
+    height: 30em;  
+    width: 30em;
+    top: 10em;
+    left: 10em;
+}
+
+.shapecontainer{
+    position: relative;
+    width: 40em;
+    height: 40em;
+    overflow: hidden;
+}
+
+.hello{
+    position: relative;
+    width: 45em;
+    height: auto;
+    color: black;
+    text-align: justify;
 }
 
 .container{
     position: relative;
-    height: 100vh;
+    height: auto;
     width: 100%;
     background-color: rgba(125,205,221,255);
-    display: flex;
 }
 
 .textcontainer{
     position: relative;
-    padding: 10vh 13vw;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
 }
 
 .hello h1{
@@ -181,6 +195,7 @@ body{
 }
 
 .right img{
+    position: static;
     border-radius: 50%;
     border: 3px solid rgba(109,230,221,255);
     width: 20vw;
@@ -189,6 +204,22 @@ body{
 
 #highlight{
     color: rgba(109,205,221,255);
+}
+
+.thingscontainer{
+    width: 85rem;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10rem;
+}
+
+.thing1, .thing2, .thing3{
+    border: 2px solid black;
+    width: 25em;
+    height: 40em;
+    background-color: white;
 }
 
 .footer{
@@ -294,10 +325,6 @@ body{
     box-shadow: 0 0 2em 0.3em rgba(71, 146, 173, 0.6);
 }
 
-.boxes h4{
-    font: bold 1.2em "Montserrat";
-}
-
 .boxes p{
     padding-bottom: 0.8em;
 }
@@ -312,7 +339,7 @@ body{
 .rectangle{
     position: relative;
     width: 0.7em;
-    height: 4em;
+    height: 2.5em;
     background-color: rgb(37, 150, 190);
     left: -2em;
 }
@@ -330,8 +357,9 @@ body{
 }
 
 .boxright img{
-    width: 45vw; 
-    height: auto;
+    position: static;
+    width: 50rem; 
+    height: 30rem;
     padding: 2em;
     display: flex;
     align-items: center;
@@ -340,7 +368,7 @@ body{
 #titles{
     position: relative; 
     color: rgb(37, 150, 190);
-    font-size: 1.6em;
+    font-size: 1.4em;
     margin: 1em 0 0.5em default;
     left: -0.5em;
 }
@@ -348,4 +376,51 @@ body{
 #information{
     top: 0;
     margin: 0 0 0 0;
+}
+
+.reachoutcontainer{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.formbox{
+    height: 25rem;
+    width: 20rem;
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    border: 2px solid rgb(37, 150, 190);
+    padding: 20px;
+    background-color: rgba(221, 221, 221, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 0.5em 1px rgb(68, 68, 68);
+}
+
+.formbox label{
+    display: flex;
+    padding: 10px 0 10px 0;
+    float: left;
+}
+
+.fill{
+    width: 10em;
+}
+
+.rememberme{
+    display: inline-flex;
+    gap: 10px
+}
+
+.formbox button{
+    padding: 15px 20px;
+    font: normal 1.2em black "Montserrat"; 
+}
+
+#reachout{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
 }
