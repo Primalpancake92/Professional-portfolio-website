@@ -47,9 +47,10 @@ body{
     justify-content: center;
     width: 100%;
     height: 4em;
-    background-color: rgba(221, 221, 221, 0.1);
+    background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     z-index: 20;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .debug{
@@ -97,7 +98,7 @@ body{
 
 .header{
     display: flex;
-    height: 60vh;
+    height: 63vh;
     padding: 11rem 11.5rem;
     align-items: center;
     background-color: #ffffff;
@@ -130,8 +131,8 @@ body{
     background-color: rgba(109,205,221,255);
     height: 30em;  
     width: 30em;
-    top: 10em;
-    left: 10em;
+    top: 9em;
+    left: 9em;
 }
 
 .shapecontainer{
@@ -340,7 +341,7 @@ body{
     position: relative;
     width: 0.7em;
     height: 2.5em;
-    background-color: rgb(37, 150, 190);
+    background-color: rgba(125,205,221,255);
     left: -2em;
 }
 
@@ -385,42 +386,89 @@ body{
     align-items: center;
 }
 
-.formbox{
-    height: 25rem;
-    width: 20rem;
-    display: flex;
-    position: relative;
-    margin: 0 auto;
-    border: 2px solid rgb(37, 150, 190);
-    padding: 20px;
-    background-color: rgba(221, 221, 221, 0.1);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 0.5em 1px rgb(68, 68, 68);
-}
-
-.formbox label{
-    display: flex;
-    padding: 10px 0 10px 0;
-    float: left;
-}
-
 .fill{
-    width: 10em;
+    display: flex;
+    flex-direction: column;
+    width: 20em;
+    align-items: center;
+    padding: 1em 0;
+}
+
+.emailfill{
+    margin: 1em 0;
+}
+
+.emailfill label{
+    font-size: 1.3em;
+}
+
+.emailfill input{
+    display: flex;
+    width: 50em;
+    padding: 1em;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: solid 2px rgba(125,205,221,255);
+}
+
+.firstandlast{
+    display: flex;
+    gap: 3em;
+}
+
+.fill label{
+    top: 2em;
+    left: 5em;
+    display: flex;
+    font-size: 1.3em;
+    align-self: flex-start;
+}
+
+.fill label{
+    font: normal 1.3em black "Montserrat";
+}
+
+.fill input{
+    display: flex;
+    width: 22em;
+    padding: 1em;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: solid 2px rgba(125,205,221,255);
+}
+
+.fill input:focus{
+    outline: none;
+}
+
+.line{
+    width: 20em;
+    height: 0.5em;
+    background-color: blue;
 }
 
 .rememberme{
-    display: inline-flex;
-    gap: 10px
-}
-
-.formbox button{
-    padding: 15px 20px;
-    font: normal 1.2em black "Montserrat"; 
-}
-
-#reachout{
     display: flex;
-    flex-direction: column;
+    align-self: flex-start;
+    left: 5px;
+}
+
+.reachout{
+    background-color: white;
     margin: 0 auto;
+    padding: 4em;
+    display: flex;
     align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.reachout button{
+    font-family: "Montserrat";
+    width: auto;
+    display: flex;
+    align-self: flex-end;
+    padding: 1em;
 }
