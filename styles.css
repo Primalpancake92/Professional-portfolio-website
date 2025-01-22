@@ -381,78 +381,10 @@ body{
 
 .reachoutcontainer{
     display: flex;
-    height: 100vh;
+    height: 94vh;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.fill{
-    display: flex;
-    flex-direction: column;
-    width: 20em;
-    align-items: center;
-    padding: 1em 0;
-}
-
-.emailfill{
-    margin: 1em 0;
-}
-
-.emailfill label{
-    font-size: 1.3em;
-}
-
-.emailfill input{
-    display: flex;
-    width: 50em;
-    padding: 1em;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    border-bottom: solid 2px rgba(125,205,221,255);
-}
-
-.firstandlast{
-    display: flex;
-    gap: 3em;
-}
-
-.fill label{
-    top: 2em;
-    left: 5em;
-    display: flex;
-    font-size: 1.3em;
-    align-self: flex-start;
-}
-
-.fill label{
-    font: normal 1.3em black "Montserrat";
-}
-
-.fill input{
-    display: flex;
-    width: 22em;
-    padding: 1em;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    border-bottom: solid 2px rgba(125,205,221,255);
-}
-
-.fill input:focus{
-    outline: none;
-}
-
-.line{
-    width: 20em;
-    height: 0.5em;
-    background-color: blue;
-}
-
-.rememberme{
-    display: flex;
-    align-self: flex-start;
-    left: 5px;
 }
 
 .reachout{
@@ -463,12 +395,115 @@ body{
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    box-shadow: 0 0 2em 0.3em rgba(71, 146, 173, 0.6);
+}
+
+.fill{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 20em;
+    align-items: center;
+    padding: 1em 1em;
+}
+
+.fill input{
+    font-family: "Montserrat";
+}
+
+.emailfill{
+    margin: 1em 0;
+}
+
+.emailfill label{
+    font-size: 1.1em;
+}
+
+.emailfill input{
+    display: flex;
+    width: 50em;
+    padding: 1em;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: solid 1px rgba(125,205,221,255);
+    font-family: "Montserrat";
+}
+
+.emailfill input:focus{
+    outline: none;
+}
+
+.firstandlast{
+    display: flex;
+    gap: 1.3em;
+}
+
+.fill label{
+    display: flex;
+    font-size: 1.1em;
+    align-self: flex-start;
+    font: normal 1em black "Montserrat";
+}
+
+.fill input{
+    width: 22em;
+    padding: 1em;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: solid 1px rgba(125,205,221,255);
+    box-sizing: border-box;
+}
+
+.fill input:focus{
+    outline: none;
+}
+
+.message textarea{
+    border-bottom: solid 1px rgba(125,205,221,1);
+    border-right: none;
+    border-left: none;  
+    border-top: none;
+    resize: none;
+    width: 52em;
+    height: 15em;
+    padding: 1em;
+    font-family: 'Montserrat';
+    box-sizing: border-box;
+}
+
+.message textarea:focus{
+    outline: none;    
+}
+
+.message label{
+    font-size: 1.1em;
+}
+
+.rememberme{
+    align-self: flex-start;
+    padding: 1em;
+}
+
+.rememberme input{
+    cursor: pointer;
 }
 
 .reachout button{
-    font-family: "Montserrat";
+    font: normal 1.1em "Montserrat";
     width: auto;
     display: flex;
-    align-self: flex-end;
-    padding: 1em;
+    align-self: center;
+    padding: 0.7em 1em;
+    background-color: rgba(125,205,221,1);
+    border: none;
+    color: white;
+    border-radius: 5em;
+    cursor: pointer;
+}
+
+.reachout button:active{
+    background-color: white; 
+    color: black;
 }
