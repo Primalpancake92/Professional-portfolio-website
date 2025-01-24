@@ -34,7 +34,8 @@ body{
     list-style: none;
     scroll-behavior: smooth auto;
     display: flex;
-    background-color: rgba(109,205,221,255);
+    min-height: 100vh;
+    background-color: rgba(109,205,221,1);
     flex-direction: column;
 }
 
@@ -47,7 +48,7 @@ body{
     justify-content: center;
     width: 100%;
     height: 4em;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(10px);
     z-index: 20;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -224,10 +225,12 @@ body{
 }
 
 .footer{
+    margin-top: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: auto;
     background-color: white;
 }
 
@@ -381,7 +384,8 @@ body{
 
 .reachoutcontainer{
     display: flex;
-    height: 94vh;
+    margin: 3em 0;
+    padding: 0em 3em 3em 3em;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -390,7 +394,7 @@ body{
 .reachout{
     background-color: white;
     margin: 0 auto;
-    padding: 4em;
+    padding: 3em;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -426,12 +430,13 @@ body{
     border-top: none;
     border-right: none;
     border-left: none;
-    border-bottom: solid 1px rgba(125,205,221,255);
+    border-bottom: solid 1px black;
     font-family: "Montserrat";
 }
 
-.emailfill input:focus{
+.emailfill input:hover, input:focus{
     outline: none;
+    border-bottom: solid 2px rgba(125,205,221,1);
 }
 
 .firstandlast{
@@ -447,21 +452,22 @@ body{
 }
 
 .fill input{
-    width: 22em;
+    width: 24em;
     padding: 1em;
     border-top: none;
     border-right: none;
     border-left: none;
-    border-bottom: solid 1px rgba(125,205,221,255);
+    border-bottom: solid 1px black;
     box-sizing: border-box;
 }
 
-.fill input:focus{
+.fill input:focus, input:hover{
     outline: none;
+    border-bottom: solid 2px rgba(125,205,221,1);
 }
 
 .message textarea{
-    border-bottom: solid 1px rgba(125,205,221,1);
+    border-bottom: solid 1px rgba(0, 0, 0, 1);
     border-right: none;
     border-left: none;  
     border-top: none;
@@ -473,8 +479,9 @@ body{
     box-sizing: border-box;
 }
 
-.message textarea:focus{
-    outline: none;    
+.message textarea:focus, textarea:hover{
+    outline: none;
+    border-bottom: solid 2px rgba(125,205,221,1);   
 }
 
 .message label{
@@ -482,7 +489,9 @@ body{
 }
 
 .rememberme{
+    display: flex;
     align-self: flex-start;
+    gap: 0.2em;
     padding: 1em;
 }
 
@@ -497,6 +506,8 @@ body{
     align-self: center;
     padding: 0.7em 1em;
     background-color: rgba(125,205,221,1);
+    outline: solid;
+    outline-color: rgba(125,205,221,1);
     border: none;
     color: white;
     border-radius: 5em;
@@ -506,4 +517,27 @@ body{
 .reachout button:active{
     background-color: white; 
     color: black;
+    outline: solid;
+    outline-color: rgba(125,205,221,1); 
+}
+
+.contactme h1{
+    margin-top: 10vh;
+    font: bold 3em "Montserrat";
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactdesc{
+    position: relative;
+    margin: 0 auto;
+    width: 45em;
+    text-align: justify;
+}
+
+.contactdesc p{
+    font: normal 1.2em "Montserrat";
+    line-height: 1.4;
 }
