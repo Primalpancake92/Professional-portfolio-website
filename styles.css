@@ -35,7 +35,7 @@ body{
     scroll-behavior: smooth auto;
     display: flex;
     min-height: 100vh;
-    background-color: rgba(109,205,221,1);
+    background-color: rgba(120,205,221,1);
     flex-direction: column;
 }
 
@@ -48,7 +48,7 @@ body{
     justify-content: center;
     width: 100%;
     height: 4em;
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.45);
     backdrop-filter: blur(10px);
     z-index: 20;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -260,10 +260,8 @@ body{
 .about__container{
     width: 100%;
     display: flex;
-    padding-bottom: 7vh;
     justify-content: center;
-    background-color: rgba(120,205,221,255);
-    padding-bottom: 5vh;
+    background-color: rgba(120,205,221,1);
 }
 
 .title__container h1{
@@ -276,34 +274,28 @@ body{
 
 .story{
     font: bold 1.5em "Montserrat";
-    margin-left: 1vw;
-    margin-bottom: 6vh;
+    margin-bottom: 2em;
 }
 
 .myjourney{
     font: bold 1.5em "Montserrat";
-    margin-top: 10vh;
-    margin-left: 1vw;
-    margin-bottom: 6vh;
+    margin-bottom: 2em;
 }
 
 .mygoal{
     font: bold 1.5em "Montserrat";
-    margin-left: 1vw;
-    margin-bottom: 6vh;
+    margin-bottom: 2em;
 }
-
 
 .square1, .square2, .square3{
     font-size: 1em;
     display: flex;
-    width: 38em;
+    width: 40em;
     background-color: white;
-    margin-top: 0vh;
-    margin-bottom: 8vh;
+    margin-bottom: 3em;
     font-weight: 50;
     text-align: justify;
-    padding: 2.5vh 2.5vw;
+    padding: 1.5em 2.5em;
     box-shadow: 0 0 2em 0.3em rgba(71, 146, 173, 0.6);
 }
 
@@ -316,7 +308,7 @@ body{
 }
 
 .project__title{
-    font: bold 2em "Montserrat";
+    font: bold 1.5em "Montserrat";
     margin-left: 4vw;
     margin-bottom: 6vh;
 }
@@ -324,7 +316,7 @@ body{
 .box1, .box2, .box3{
     display: flex;
     margin: 8vh 4vw;
-    width: 43em;
+    width: 45em;
     background-color: white;
     box-shadow: 0 0 2em 0.3em rgba(71, 146, 173, 0.6);
 }
@@ -337,15 +329,15 @@ body{
     margin: 0;
     width: 17em;
     font: lighter 1em "Montserrat";
-    padding-left: 2em;
+    padding-left: 2.5em;
 }
 
 .rectangle{
     position: relative;
     width: 0.7em;
-    height: 2.5em;
+    height: 2em;
     background-color: rgba(125,205,221,255);
-    left: -2em;
+    left: -2.5em;
 }
 
 .boxleftinside{
