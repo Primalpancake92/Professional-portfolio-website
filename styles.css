@@ -48,7 +48,7 @@ body{
     justify-content: center;
     width: 100%;
     height: 4em;
-    background-color: rgba(255, 255, 255, 0.45);
+    background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
     z-index: 20;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -93,7 +93,7 @@ body{
 }
 
 .links a:hover{
-    color: rgba(109,205,221,255);
+    color: rgba(109,205,221,1);
     transition: 0.3 ease;
 }
 
@@ -102,7 +102,7 @@ body{
     height: 63vh;
     padding: 11rem 11.5rem;
     align-items: center;
-    background-color: #ffffff;
+    background-color: white;    
     justify-content: center;
     margin-top: auto;
 }
@@ -268,22 +268,25 @@ body{
     display: flex;
     justify-content: center;
     font: bolder 3em "Montserrat";
-    margin-top: 10vh;
-    margin-bottom: 8vh;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
 }
 
 .story{
     font: bold 1.5em "Montserrat";
+    padding-left: 0.5em;
     margin-bottom: 2em;
 }
 
 .myjourney{
     font: bold 1.5em "Montserrat";
+    padding-left: 0.5em;
     margin-bottom: 2em;
 }
 
 .mygoal{
     font: bold 1.5em "Montserrat";
+    padding-left: 0.5em;
     margin-bottom: 2em;
 }
 
@@ -296,15 +299,15 @@ body{
     font-weight: 50;
     text-align: justify;
     padding: 1.5em 2.5em;
-    box-shadow: 0 0 2em 0.3em rgba(71, 146, 173, 0.6);
+    box-shadow: 0 0 2em 0.3em rgba(62, 110, 128, 0.6);
 }
 
 .project__container h1{
     display: flex;
     justify-content: center;
     font: bold 3em "Montserrat";
-    margin-top: 10vh;
-    margin-bottom: 8vh;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
 }
 
 .project__title{
@@ -315,10 +318,14 @@ body{
 
 .box1, .box2, .box3{
     display: flex;
-    margin: 8vh 4vw;
+    margin: 2em 4em;
     width: 45em;
     background-color: white;
-    box-shadow: 0 0 2em 0.3em rgba(71, 146, 173, 0.6);
+    box-shadow: 0 0 2em 0.3em rgba(62, 110, 128, 0.6);
+}
+
+.box3{
+    margin-bottom: 4em;
 }
 
 .boxes p{
@@ -391,7 +398,7 @@ body{
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    box-shadow: 0 0 2em 0.3em rgba(71, 146, 173, 0.6);
+    box-shadow: 0 0 2em 0.3em rgba(62, 110, 128, 0.6);
 }
 
 .fill{
@@ -532,4 +539,66 @@ body{
 .contactdesc p{
     font: normal 1.2em "Montserrat";
     line-height: 1.4;
+}
+
+.resumetitle{
+    position: relative;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    margin: 1.5em 0;
+}
+
+.resumetitle h1{
+    font: bolder 3em "Montserrat";
+}
+
+.resumedesc{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftdesc{
+    margin-right: 11em;
+}
+
+.rightdesc a{
+    margin-left: 11em;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: white;
+    font: normal 1.2em "Montserrat";
+    background-color: rgba(26,53,77,1);
+    border: solid 2px rgba(26,53,77,1);
+    border-radius: 10em;
+}
+
+.rightdesc a:active{
+    background-color: white;
+    color: black;
+}
+
+.boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+}
+
+.boxleft1{
+    margin: 0;
+    width: 20em;
+    font: lighter 1em "Montserrat";
+    padding: 2em 0 2em 2.5em;
+}
+
+.boxright1{
+    width: 20em;
+    height: 22em;
+    font: lighter 1em "Montserrat";
+    display: flex;
+    padding: 1em;
+    align-items: center;
 }
